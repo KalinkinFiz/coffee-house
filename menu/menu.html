@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/coffee-cup.svg" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <title>Menu</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-container">
+          <a href="../index.html" class="header-logo"
+            ><img class="header-logo-image" src="../assets/icons/logo.svg" alt="logo"
+          /></a>
+          <nav class="header-menu-container" id="navigation">
+            <div class="header-menu-left">
+              <ul class="header-menu-list">
+                <li>
+                  <a href="../index.html#favourite" class="header-menu-item">Favorite coffee</a>
+                </li>
+                <li><a href="../index.html#about" class="header-menu-item">About</a></li>
+                <li><a href="../index.html#mobile" class="header-menu-item">Mobile app</a></li>
+                <li><a href="#footer" class="header-menu-item">Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="header-menu-right">
+              <a href="#" class="header-menu-item right">
+                <span>Menu</span>
+                <img src="../assets/icons/coffee-cup.svg" alt="cup" />
+              </a>
+            </div>
+          </nav>
+          <div class="header-burger">
+            <button class="header-burger-icon" id="navigation-burger"></button>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="menu">
+          <div class="menu-container">
+            <h1 class="menu-container-title">
+              Behind each of our cups hides an <span>amazing surprise</span>
+            </h1>
+            <div class="menu-button">
+              <button id="coffeeBtn" class="menu-button-tab" onclick="showProducts('coffee')">
+                <span class="menu-button-tab-item">
+                  <img
+                    class="menu-button-tab-image"
+                    src="../assets/icons/coffee.png"
+                    alt="coffee"
+                  />
+                </span>
+                <span class="menu-button-tab-text">Coffee</span>
+              </button>
+              <button id="teaBtn" class="menu-button-tab" onclick="showProducts('tea')">
+                <span class="menu-button-tab-item">
+                  <img class="menu-button-tab-image" src="../assets/icons/tea.png" alt="tea" />
+                </span>
+                <span class="menu-button-tab-text">Tea</span>
+              </button>
+              <button id="dessertBtn" class="menu-button-tab" onclick="showProducts('dessert')">
+                <span class="menu-button-tab-item">
+                  <img
+                    class="menu-button-tab-image"
+                    src="../assets/icons/dessert.png"
+                    alt="dessert"
+                  />
+                </span>
+                <span class="menu-button-tab-text">Dessert</span>
+              </button>
+            </div>
+
+            <ul id="product-list" class="menu-list">
+              <li class="menu-list-item">
+                <div class="menu-list-image">
+                  <img src="../assets/menu/coffee/coffee-1.png" alt="coffee" />
+                </div>
+                <div class="menu-list-item-body">
+                  <div class="menu-list-item-name">Irish coffee</div>
+                  <div class="menu-list-item-description">
+                    Fragrant black coffee with Jameson Irish whiskey and whipped milk
+                  </div>
+                  <div class="menu-list-item-price">$7.00</div>
+                </div>
+              </li>
+
+              <li class="menu-list-item">
+                <div class="menu-list-image">
+                  <img src="../assets/menu/coffee/coffee-2.png" alt="coffee" />
+                </div>
+                <div class="menu-list-item-body">
+                  <div class="menu-list-item-name">Kahlua coffee</div>
+                  <div class="menu-list-item-description">
+                    Classic coffee with milk and Kahlua liqueur under a cap of frothed milk
+                  </div>
+                  <div class="menu-list-item-price">$7.00</div>
+                </div>
+              </li>
+
+              <li class="menu-list-item">
+                <div class="menu-list-image">
+                  <img src="../assets/menu/coffee/coffee-3.png" alt="coffee" />
+                </div>
+                <div class="menu-list-item-body">
+                  <div class="menu-list-item-name">Honey raf</div>
+                  <div class="menu-list-item-description">
+                    Espresso with frothed milk, cream and aromatic honey
+                  </div>
+                  <div class="menu-list-item-price">$5.50</div>
+                </div>
+              </li>
+
+              <li class="menu-list-item">
+                <div class="menu-list-image">
+                  <img src="../assets/menu/coffee/coffee-4.png" alt="coffee" />
+                </div>
+                <div class="menu-list-item-body">
+                  <div class="menu-list-item-name">Ice cappuccino</div>
+                  <div class="menu-list-item-description">
+                    Cappuccino with soft thick foam in summer version with ice
+                  </div>
+                  <div class="menu-list-item-price">$5.00</div>
+                </div>
+              </li>
+
+              <li class="menu-list-item">
+                <div class="menu-list-image">
+                  <img src="../assets/menu/coffee/coffee-5.png" alt="coffee" />
+                </div>
+                <div class="menu-list-item-body">
+                  <div class="menu-list-item-name">Espresso</div>
+                  <div class="menu-list-item-description">Classic black coffee</div>
+                  <div class="menu-list-item-price">$4.50</div>
+                </div>
+              </li>
+
+              <li class="menu-list-item">
+                <div class="menu-list-image">
+                  <img src="../assets/menu/coffee/coffee-6.png" alt="coffee" />
+                </div>
+                <div class="menu-list-item-body">
+                  <div class="menu-list-item-name">Latte</div>
+                  <div class="menu-list-item-description">
+                    Espresso coffee with the addition of steamed milk and dense milk foam
+                  </div>
+                  <div class="menu-list-item-price">$5.50</div>
+                </div>
+              </li>
+
+              <li class="menu-list-item">
+                <div class="menu-list-image">
+                  <img src="../assets/menu/coffee/coffee-7.png" alt="coffee" />
+                </div>
+                <div class="menu-list-item-body">
+                  <div class="menu-list-item-name">Latte macchiato</div>
+                  <div class="menu-list-item-description">
+                    Espresso with frothed milk and chocolate
+                  </div>
+                  <div class="menu-list-item-price">$5.50</div>
+                </div>
+              </li>
+
+              <li class="menu-list-item">
+                <div class="menu-list-image">
+                  <img src="../assets/menu/coffee/coffee-8.png" alt="coffee" />
+                </div>
+                <div class="menu-list-item-body">
+                  <div class="menu-list-item-name">Coffee with cognac</div>
+                  <div class="menu-list-item-description">
+                    Fragrant black coffee with cognac and whipped cream
+                  </div>
+                  <div class="menu-list-item-price">$6.50</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="refresh-btn" onclick="toggleProducts()">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8"
+                stroke="#403F3D"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3"
+                stroke="#403F3D"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </section>
+      </main>
+
+      <footer class="footer" id="footer">
+        <div class="footer-container">
+          <div class="footer-container-block">
+            <div class="footer-social">
+              <h2 class="footer-social-title">Sip, Savor, Smile. <span>It’s coffee time!</span></h2>
+              <div class="footer-social-link">
+                <a href="https://twitter.com/" target="_blank">
+                  <span class="footer-social-link-body">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#000000"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M14.7038 2.82738C15.6569 2.4636 16.6988 2.40131 17.6885 2.64894C18.5675 2.86889 19.3677 3.32393 20.0048 3.96235C20.4846 3.7816 21.0851 3.48709 21.6175 3.20615C21.9344 3.03889 22.2172 2.8818 22.4209 2.7665C22.5226 2.70891 22.6043 2.66187 22.6604 2.62937L22.7245 2.59204L22.7407 2.58251L22.7456 2.57966M17.4457 3.61903C16.6548 3.42113 15.8221 3.47091 15.0604 3.76164C14.2987 4.05237 13.6446 4.57003 13.1867 5.2446C12.7288 5.91917 12.4891 6.71811 12.5 7.53335L12.5001 7.54006L12.5001 8.54006C12.5001 8.81115 12.284 9.03286 12.013 9.03989C10.1732 9.08759 8.35018 8.67956 6.70626 7.85212C5.3416 7.16524 4.13554 6.20705 3.16011 5.03975C3.10822 5.20677 3.05358 5.39584 2.99975 5.604C2.77369 6.47811 2.56495 7.67641 2.62454 8.98735C2.68402 10.2961 3.01021 11.7067 3.84434 13.0238C4.67644 14.3376 6.03307 15.5887 8.20312 16.5532C8.36902 16.6269 8.48192 16.7848 8.49807 16.9656C8.51422 17.1464 8.43108 17.3218 8.28087 17.4237C6.70033 18.4966 4.89734 19.1759 3.02155 19.4188C6.87957 20.9574 10.9237 20.7182 14.1401 19.0062C17.8432 17.0352 20.4997 13.0856 20.5001 7.51113C20.4992 7.26373 20.4754 7.01694 20.4289 6.77393C20.3976 6.61 20.4501 6.44124 20.569 6.32405C21.0129 5.88624 21.5013 5.0394 21.8948 4.24556C21.9073 4.22036 21.9196 4.19529 21.9319 4.17036C21.3145 4.49137 20.5696 4.84858 20.0042 5.01882C19.8159 5.07553 19.6118 5.01657 19.4828 4.86817C18.9477 4.25297 18.2367 3.81693 17.4457 3.61903ZM22.7456 2.57966C22.9297 2.47092 23.1627 2.49116 23.3252 2.63018C23.4876 2.76922 23.5437 2.99616 23.4646 3.19485L23.0001 3.01006C23.4646 3.19485 23.4647 3.19478 23.4646 3.19485L23.461 3.20401L23.4513 3.22807C23.4428 3.24889 23.4305 3.27912 23.4145 3.3177C23.3826 3.39485 23.3361 3.50548 23.2772 3.64111C23.1595 3.91205 22.9916 4.2844 22.7908 4.68967C22.4408 5.39564 21.9628 6.26042 21.4532 6.84213C21.4837 7.06283 21.4993 7.28542 21.5 7.5084L21.5001 7.51006C21.5001 13.435 18.6566 17.7351 14.61 19.8889C10.5755 22.0363 5.39549 22.0239 0.75723 19.4471C0.554825 19.3347 0.456102 19.098 0.518626 18.875C0.58115 18.6521 0.788563 18.5012 1.01992 18.5105C3.10349 18.5933 5.16228 18.0896 6.96515 17.0655C5.09829 16.0879 3.83066 14.8712 2.99952 13.5588C2.05239 12.0634 1.69108 10.474 1.62557 9.03276C1.56016 7.5937 1.78892 6.292 2.0316 5.35361C2.15325 4.88326 2.27921 4.50103 2.37554 4.23459C2.42373 4.10129 2.46459 3.99673 2.49391 3.92437C2.50857 3.88818 2.52035 3.86002 2.52873 3.84032L2.53868 3.81716L2.54163 3.81043L2.54257 3.80829C2.5427 3.808 2.54315 3.80699 3.00005 4.01006L2.54315 3.80699C2.6163 3.64238 2.77234 3.52985 2.95162 3.51241C3.1309 3.49496 3.30571 3.57529 3.40923 3.7227C4.37216 5.09386 5.65924 6.20559 7.15586 6.95889C8.50724 7.63908 9.99158 8.00796 11.5001 8.04118V7.54333C11.4871 6.52443 11.787 5.52606 12.3593 4.68294C12.9323 3.83888 13.7507 3.19116 14.7038 2.82738"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <span class="footer-social-link-body">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#000000"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5ZM7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12Z"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8 3.5C5.51472 3.5 3.5 5.51472 3.5 8V16C3.5 18.4853 5.51472 20.5 8 20.5H16C18.4853 20.5 20.5 18.4853 20.5 16V8C20.5 5.51472 18.4853 3.5 16 3.5H8ZM2.5 8C2.5 4.96243 4.96243 2.5 8 2.5H16C19.0376 2.5 21.5 4.96243 21.5 8V16C21.5 19.0376 19.0376 21.5 16 21.5H8C4.96243 21.5 2.5 19.0376 2.5 16V8Z"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.8445 6.12723C18.0497 6.31196 18.0664 6.6281 17.8817 6.83336L17.8717 6.84447C17.6869 7.04972 17.3708 7.06636 17.1655 6.88163C16.9603 6.6969 16.9436 6.38076 17.1284 6.1755L17.1384 6.16439C17.3231 5.95914 17.6392 5.9425 17.8445 6.12723Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <span class="footer-social-link-body">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#000000"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.1109 3.11091C11.1424 2.07946 12.5413 1.5 14 1.5H17C17.2761 1.5 17.5 1.72386 17.5 2V6C17.5 6.27614 17.2761 6.5 17 6.5H14C13.8674 6.5 13.7402 6.55268 13.6464 6.64645C13.5527 6.74022 13.5 6.86739 13.5 7V9.5H17C17.154 9.5 17.2993 9.57094 17.3941 9.69229C17.4889 9.81365 17.5224 9.9719 17.4851 10.1213L16.4851 14.1213C16.4294 14.3439 16.2294 14.5 16 14.5H13.5V22C13.5 22.2761 13.2761 22.5 13 22.5H9C8.72386 22.5 8.5 22.2761 8.5 22V14.5H6C5.72386 14.5 5.5 14.2761 5.5 14V10C5.5 9.72386 5.72386 9.5 6 9.5H8.5V7C8.5 5.54131 9.07946 4.14236 10.1109 3.11091ZM14 2.5C12.8065 2.5 11.6619 2.97411 10.818 3.81802C9.97411 4.66193 9.5 5.80653 9.5 7V10C9.5 10.2761 9.27614 10.5 9 10.5H6.5V13.5H9C9.27614 13.5 9.5 13.7239 9.5 14V21.5H12.5V14C12.5 13.7239 12.7239 13.5 13 13.5H15.6096L16.3596 10.5H13C12.7239 10.5 12.5 10.2761 12.5 10V7C12.5 6.60217 12.658 6.22064 12.9393 5.93934C13.2206 5.65804 13.6022 5.5 14 5.5H16.5V2.5H14Z"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="footer-contacts">
+              <div class="footer-contacts-title">Contact us</div>
+              <ul class="footer-contacts-list">
+                <li>
+                  <a href="https://maps.app.goo.gl/P3W4EwQmPaWEDWGZA" target="_blank">
+                    <img class="footer-contacts-icon" src="../assets/icons/pin-alt.svg" alt="pin" />
+                    <span class="footer-contacts-text">8558 Green Rd.,&nbsp;&nbsp;LA</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+16035550123">
+                    <img class="footer-contacts-icon" src="../assets/icons/phone.svg" alt="phone" />
+                    <span class="footer-contacts-text">+1 (603) 555-0123</span>
+                  </a>
+                </li>
+                <li>
+                  <span>
+                    <img class="footer-contacts-icon" src="../assets/icons/clock.svg" alt="phone" />
+                    <span class="footer-contacts-text">Mon-Sat: 9:00 AM – 23:00 PM</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal-inner">
+        <img src="../assets/menu/coffee/coffee-1.png" alt="coffee-1" />
+        <div class="modal-content">
+          <div class="content-title">
+            <h3>Irish coffee</h3>
+            <span>Fragrant black coffee with Jameson Irish whiskey and whipped milk</span>
+          </div>
+          <div class="content-size">
+            <h4>Size</h4>
+            <form>
+              <div class="size-item">
+                <input class="input-radio" type="radio" id="small" value="s" />
+                <label for="small"> <span class="form-icon">S</span> 200 ml </label>
+              </div>
+              <div class="size-item">
+                <input class="input-radio" type="radio" id="medium" value="m" />
+                <label for="medium"> <span class="form-icon">M</span> 300 ml </label>
+              </div>
+              <div class="size-item">
+                <input class="input-radio" type="radio" id="large" value="l" />
+                <label for="large"> <span class="form-icon">L</span> 400 ml </label>
+              </div>
+            </form>
+          </div>
+          <div class="content-additives">
+            <h4>Additives</h4>
+            <form>
+              <div class="additives-item">
+                <input type="checkbox" id="Sugar" value="Sugar" />
+                <label for="Sugar"> <span class="form-icon">1</span> Sugar </label>
+              </div>
+              <div class="additives-item">
+                <input type="checkbox" id="Cinnamon" value="Cinnamon" />
+                <label for="Cinnamon"> <span class="form-icon">2</span> Cinnamon </label>
+              </div>
+              <div class="additives-item">
+                <input type="checkbox" id="Syrup" value="Syrup" />
+                <label for="Syrup"> <span class="form-icon">3</span> Syrup </label>
+              </div>
+            </form>
+          </div>
+          <p class="content-total">Total: <span class="content-total-price">$7.00</span></p>
+          <div class="content-price-info">
+            <span
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_268_9737)">
+                  <path
+                    d="M8 7.66663V11"
+                    stroke="#403F3D"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8 5.00667L8.00667 4.99926"
+                    stroke="#403F3D"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.00016 14.6667C11.6821 14.6667 14.6668 11.6819 14.6668 8.00004C14.6668 4.31814 11.6821 1.33337 8.00016 1.33337C4.31826 1.33337 1.3335 4.31814 1.3335 8.00004C1.3335 11.6819 4.31826 14.6667 8.00016 14.6667Z"
+                    stroke="#403F3D"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_268_9737">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span class="price-info-description"
+              >The cost is not final. Download our mobile app to see the final price and place your
+              order. Earn loyalty points and enjoy your favorite coffee with up to 20%
+              discount.</span
+            >
+          </div>
+          <button class="button-close">Close</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../js/menu.js"></script>
+    <script src="../resources/products.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/product.js"></script>
+  </body>
+</html>
